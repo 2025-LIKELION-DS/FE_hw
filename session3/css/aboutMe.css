@@ -1,0 +1,71 @@
+.yena {
+  background-color: darkblue;
+}
+
+.information {
+  color: darkgoldenrod;
+  font-size: 20;
+  font-family: "Orbit", sans-serif;
+  font-style: normal;
+}
+.information2 {
+  color: darkgoldenrod;
+  font-size: 20;
+  font-family: "Orbit", sans-serif;
+  font-style: normal;
+  display: inline-block;
+}
+.information3 {
+  color: darkgoldenrod;
+  font-size: 20;
+  font-family: "Orbit", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.orbit-title {
+  color: rgb(45, 160, 45);
+  font-family: "Orbit", sans-serif;
+  font-size: 35px;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.background {
+  background-color: floralwhite;
+}
+.relative {
+  position: relative;
+  display: inline-block;
+}
+.circle {
+  display: inline-block;
+  width: 1000px;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+}
+
+.absolute1 {
+  display: inline-block;
+  position: absolute;
+  width: 1000px;
+  left: 500px;
+}
+
+.font {
+  text-align: center;
+  background-color: antiquewhite;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  position: absolute;
+  padding: 20px;
+  color: darkseagreen;
+  width: 100%;
+}
+.img {
+  border-radius: 20px;
+}
