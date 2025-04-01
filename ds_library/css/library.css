@@ -1,0 +1,13 @@
+.fixed {
+  position: fixed;
+  left: 90%;
+  bottom: 30px;
+  z-index: 9990;
+  width: 95px;
+  height: 100px;
+}
+
+.dslogo {
+  width: 260px;
+  height: 90;
+}
