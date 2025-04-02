@@ -1,0 +1,136 @@
+.head_big {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.head_small {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.head_texts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+body_margin {
+  margin: 0%;
+  padding: 0%;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav_display {
+  flex-wrap: wrap;
+  font-size: 15px;
+  background-color: rgba(220, 220, 220, 0.225);
+  border-bottom-style: solid;
+  border-color: gainsboro;
+  border-width: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.nav_img {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.nav_text {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.aside_display {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.notice_title {
+  width: 500px;
+  padding-top: 15px;
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.noticetext_big {
+  font-weight: bold;
+  font-size: 25px;
+}
+.noticetext_normal {
+  font-size: 20px;
+}
+.normal_text_aligns {
+  margin-top: 20px;
+}
+.notice_border {
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 2px;
+}
+.article_detail {
+  font-weight: lighter;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 15px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: gainsboro;
+}
+.article_date {
+  color: gray;
+}
+.NOTICE_display {
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.banner_display {
+  margin-top: 50px;
+}
+.pink {
+  color: pink;
+}
+.text_light {
+  color: grey;
+  font-weight: 100;
+}
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+@media (max-width: 990px) {
+  div.head_texts {
+    display: none;
+  }
+  header.head_big {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 991px) {
+  div.header_right {
+    display: none;
+  }
+}
+
+.header_right {
+  display: flex;
+}
+#menu_bar {
+  margin-left: 20px;
+  margin-top: 20px;
+}
