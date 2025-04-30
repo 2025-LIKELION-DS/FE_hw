@@ -1,0 +1,31 @@
+#box {
+  font-family: "Orbit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(98, 47, 10);
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(112, 71, 43);
+}
+.background {
+  background-color: rgba(245, 222, 179, 0.788);
+}
+#text {
+  background: white;
+  border: 5px;
+  border-style: solid;
+  border-color: rgb(98, 47, 10);
+  border-radius: 20px;
+  padding: 10px;
+}
+.smallbox {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#line {
+  border-color: rgb(98, 47, 10);
+}
