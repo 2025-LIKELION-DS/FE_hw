@@ -1,24 +1,33 @@
-Q1. 4. console.text="클릭됨"
-Q2. contains
-Q3. n=1, n=3, n=5
-Q4. 3000
-Q5. appendChild
-Q6.
-Q7.
+Q1. 4. console.text="클릭됨" - x
+
+Q2. contains - x
+
+Q3. n=1, n=3, n=5 -x
+
+Q4. 3000 - o
+
+Q5. appendChild - o
+
+Q6. - x
+
+Q7. - o
 const lion = () => {
 	console.log("자바스크립트 마스터를 해보자!");
 };
 lion()
-Q8.
+
+Q8. - x
 let isLogin;
 let @@ = true ? false : "환영합니다!" ;
 console.log(@@)
-Q9.
+
+Q9. - x
 do {
 	const box = prompt("무엇을 말하고 싶나요?");
 	console.log(box);
 } while (prompt("무엇을 말하고 싶나요?", "끝"))
-Q10.
+
+Q10. - x
 while (num<=10) {
 	prompt("숫자를 입력하세요");
 	++count;
@@ -26,8 +35,8 @@ while (num<=10) {
 
 ]
 
-Q11.
-Q12.
+Q11. - x
+Q12. - x
 const arr1 = ["빨강", "주황", "노랑", "초록"]
 const arr2 = ["파랑", "남색", "보라", "핑크"]
 
@@ -35,6 +44,6 @@ let arr3 = arr1.push("파랑", "남색", "보라", "핑크");
 console.log(arr1);
 
 console.log("노랑")
-Q13.
-Q14.
-Q15.
+Q13. - x
+Q14. - x
+Q15. - x
