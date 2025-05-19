@@ -1,3 +1,4 @@
+// O
 const fruits = ["banana", "apple", "orange"];
 
 if (fruits.includes("apple")) {
