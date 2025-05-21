@@ -4,14 +4,37 @@ O Q1) 2.div.textContent = "클릭됨"
 O Q2) includes 
 O Q3) num % 2 === 0 
 O Q4) 3000 
-X Q5)add
+X Q5)add 
+    // [정답 : appendChild
+        appendChild는 자식요소로 추가하는 DOM메서드이다.]
+
 X Q6) count
+    [정답 : innerText = count] //버튼 안에 count표시시
+
 O Q7) const lion = () => console.log("자바스크립트 마스터를 해보자!");
+
 X Q8) let isLogin = true ? alert("환영합니다!"); : alert("접근 권한이 없습니다.");
+    [정답 : alert(isLogin ? "환영합니다!" : "접근 권한이 없습니다."); ]
+       // alert창 안에 삼합연산자 작성(true라면 환영합니다, false라면 접근권한이 없습니다.)
+
 X Q9)
 do{
 let something = prompt("무엇을 말하고 싶나요?");
 }while(something !="끝")
+    
+    [정답: 
+    let something;
+
+    do {
+        something = prompt("무엇을 말하고 싶나요?");    
+
+        if (something !== "끝") {
+        alert(something);
+     }
+        } while (something !== "끝");
+] // 변수를 바깥에 선언. 입력받은 변수의 값이 "끝"이라면 종료
+
+
 X Q10)
 let num = prompt("숫자를 입력하세요");
 while(count <= num){
@@ -21,6 +44,20 @@ sum += count;
 count ++;
 }
 alert("1부터 해당 값까지의 합은 ${sum}입니다.");
+
+[정답 : 
+const input = prompt("숫자를 입력하세요.");
+const num = Number(input); 
+let sum = 0;
+let i = 1;
+
+while (i <= num) {
+  sum += i;
+  i++;
+}
+alert(`1부터 해당값까지의 합은 ${sum}입니다.`);
+]// prompt로 숫자 입력받음. 형변환 하고 num변수에 저장. while문으로 1부터 num숫자만큼 더하기
+
 
 X Q11)
 const randomNum(){
@@ -36,6 +73,26 @@ sum += arr[i];
 } 
 documents.write(sum);
 
+[정답: 
+function randomNum() {
+  return Math.floor(Math.random() * 11); // 0~10
+}
+
+const arr = [];
+let sum = 0;
+
+for (let i = 0; i < 3; i++) {
+  const num = randomNum();
+  arr.push(num);
+  document.write(`${i + 1}번째 랜덤 난수 : ${num}`);
+  sum += num;
+}
+
+document.write(`3개의 합 : ${sum}`);
+] // Math.floor(Math.random() * 11)로 랜덤 숫자만드는 함수 작성. 
+num변수에 랜덤 난수 저장. push메서드로 배열에 저장.for문 돌 때마다 sum변수에 num더하기
+
+
 X Q12)
 const combined = [arr1,arr2];
 console.log(combined);
@@ -46,10 +103,70 @@ console.log(three);
 const warm = combined.slice(4,8);
 console.log(warm);
 
+[정답 :
+const arr1 = ["빨강", "주황", "노랑", "초록"];
+const arr2 = ["파랑", "남색", "보라", "핑크"];
+
+const combined = arr1.concat(arr2); 
+console.log(combined); 
+
+console.log(combined[3]); 
+
+console.log(combined.slice(4, 9));
+] // concat => arr1,arr2배열을 합치는 메서드.
+slice(a,b) => 인덱스 a~b까지 출력력
+
+
+Q13)
+[정답:
+// 조건 1
+const now = new Date("2025-05-02");
+console.log(now);
+
+// 조건 2
+const today = new Date();
+document.write("오늘 날짜: " + today.toLocaleDateString());
+
+// 조건 3
+const diffTime = today - now; 
+const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+document.write("2025년 5월 2일부터 " + diffDays + "일이 지났습니다.");
+ ] 
+ // new Date() => 새로운 date 객체 만들기
+    toLocaleDateString=>로컬 형식의 날짜만 반환하는 메서드드
+    today - now로 지난 시간 계산, diffDays에서 시간 = 며칠인지 계산 
+
 X Q14)
 let now = new Date();
 now.setFullYear(2025);
 now.setMonth(5);
 now.setDate(15);
 console.log("오늘 날짜:", now.getFullYear(),"년",now.getMonth(),"월",now.getDate(),"일")
+
+[정답: 
+    let count = 1;
+
+    function change() {
+      count++;      
+      document.getElementById("name").innerText = "likelion_" + count;
+    }
+] //함수 실행 시 count가 1씩 더해짐. innerText로 더해진 count와 문구를 출력
+
+
+Q15)
+[정답:
+    const person = {
+      greet: function(name, age) {
+        alert(`안녕, ${age}살 ${name} !!`);
+      }
+    };
+
+    function getInfo() {
+      const name = prompt("이름을 입력하세요");
+      const age = prompt("나이를 입력하세요");
+      person.greet(name, age);
+    }
+] // prompt로 이름과 나이를 입력받기. greet함수에 이름, 나이 전달. greet함수에서 alert로 나이, 이름을 출력
+
+
 -->
