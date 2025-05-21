@@ -1,4 +1,7 @@
-// X
+<!-- X -->
+<!--Q. 버튼을 클릭하면 글자의 값이 바뀌는 change()함수를 완성하라.
+조건1. 클릭을 누르면 순서대로 변경 (likelion_1 -> likelion_2 -> likelion_3)
+조건2. 코드 참고 및 getELementByid 사용-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,14 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>08</title>
     <script>
+      let count = 1; //클릭 횟수 저장할 변수 선언
+
       function change() {
-        document.getElementById("name");
-        name.style. fonts= ;
-        sapn.style.text="";
+        //버튼을 클릭하면 글자의 값이 변하는 change()함수 선언
+        let msg = document.getElementById("name"); //span코드의 id요소의 문자를 연결해 msg변수에 저장장
+        count++; //클릭 횟수 증가
+
+        //조건문으로 버튼 클릭 횟수에 따라 msg에 저장된 값이 변할 수 있도록
+        if (count === 2) {
+          //버튼 누른 횟수가 2라면
+          msg.innerText = "likelion_2"; //likelion_2 문자열 출력
+        } else if (count === 3) {
+          msg.innerText = "likelion_3";
+        } else {
+          count = 1; //다시 처음으로 순환시키기 위해
+          msg.innerText = "likelion_1"; //(innerText)는 html 안의 텍스트를 읽거나 변경할 때 사용하므로 적절.
+        }
       }
     </script>
   </head>
   <body>
-    <span id="name"
+    <span id="name">likelion_1</span><br />
+    <input type="button" value="클릭" onclick="change()" />
   </body>
 </html>
