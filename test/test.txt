@@ -22,3 +22,95 @@
 
 ps. 9번 문제는 돌아가긴 돌아갈 거 같은데 맞다고 보긴 어려워서 🔺 처리 했어요! 
     🔺 까지 오답노트 진행해 주세요!
+
+
+🌟오답 정리
+2.includes
+->includes(value) 배열 안에 값이 있으면 true
+  indexOf(value) 배열 안에 값이 있으면 인덱스 출력 없으면 -1 출력
+
+5.appendChild
+->push 는 배열 끝에 요소 추가할 때 씀
+  appendChild는 html요소를 다른 요소의 자식으로 추가할 때 씀씀
+
+6.innerText = count
+->innerText 화면에 텍스트를 보이게함.
+
+8.alert(isLogin ? '환영합니다!' : '접근 권한이 없습니다.');
+->삼항 연산자 조건 ? 참일 떄 실행 : 거짓일 때 실행;
+
+9.let input;
+  do{
+    input= prompt("무엇을 말하고 싶나요?");
+  }while(input !== "끝")
+->do-while문은 조건 검사 전에 한 번은 무조건 실행
+
+10.let input= prompt("숫자를 입력하세요");
+   let number = number(input);
+   let sum=0;
+   let i=1;
+   while(i<=number){
+    sum += i;
+    i++
+   }
+   alert("1부터 해당값까지의 합은 "+ sum + "입니다.");
+->prompt() 입력 값은 문자열로 받음. 그래서 숫자로 계산하려면 형 변환이 필요함. 
+
+11.function randomNum(){
+    return Math.floor(Math.random()*11);
+   }
+   const arr = [];
+   let sum = 0;
+   for (let i=1; i<4; i++){
+    const num = randomNum();
+    arr.push(num);
+    sum+=num;
+    console.log('${i}번째 랜덤 난수: ${num}');
+   }
+   console.log('3개의 합: ${sum}');
+->Math.random() 0이상 1미만의 실수인 난수 생성
+  Math.floor(x) x이하의 가장 큰 정수
+  Math.floor(Math.random()*11) 0~10 정수인 난수 생성
+  arr.push(value) 배열 마지막에 값 추가가
+
+12.const arr1 = ["빨강", "주황", "노랑", "초록"];
+   const arr2 = ["파랑", "남색", "보라", "핑크"];
+   const combined = [...arr1,...arr2];
+   console.log(combined);
+   console.log(combined[2]);
+   console.log(combined.slice(3,8));
+->배열은 인덱스 번호로 접근함.
+  slice(start,end) 로 원하는 구간을 잘라낼 수 있지만 end는 포함 안됨.
+  전개 연산자 ... 는 배열을 펼쳐서 새로운 배열을 구성할 수 있음.
+
+13.const targetDate = new Date(2025, 4, 2);
+   console.log(targetDate);
+   const today = new Date();
+   document.write('오늘 날짜: ${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일');
+   const diffTime= today- targetDate;
+   const diffDays = Math.floor(diffTime/(1000*60*60*24));
+   document.write('2025년 5월 2일로부터 ${diffDays}일이 지났습니다.');
+->new Date(연, 월, 일) 이고 월은 0부터 시작함.
+  getFullYear(), getMonth(), getDate()은 각각 연도, 월, 일을 숫자로 변환함.
+  밀리초를 일 수로 바꾸기 위해서 1000(밀리초)*60(초)*60(분)*24(시간) 으로 나눔.
+
+14.let count = 1;
+   function change(){
+    count++;
+    if (count>3){
+        count=1;
+    }
+    document.getElementById("name").innerText="likelion_"+count;
+   }
+->getElementById(id)는 해당 id를 가진 html요소를 js로 가져올 수 있음.
+  count 변수를 함수 밖에 선언해서 계속 사용할 수 있음.
+
+15.const name = prompt("이름을 입력하세요.");
+   const age = prompt("나이를 입력하세요.");
+   const person = {
+    greet:function(){
+        alert("안녕,"+age+"살"+name+!!);
+    }
+   };
+   person.greet();
+->person 객체 선언하고 greet메서드를 줌.
