@@ -5,10 +5,10 @@ import { Routes, Route } from "react-router-dom";
 import EmptyPage from "./component/EmptyPage";
 import CreateWord from "./component/CreateWord.jsx";
 import CreateDay from "./component/CreateDay";
-
+import { AppContainer } from './styles/GlobalStyles';
 function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <Header></Header>
       <Routes>
         <Route path="/" element={<DayList></DayList>}></Route>
@@ -17,7 +17,7 @@ function App() {
         <Route path="/create_day" element={<CreateDay></CreateDay>}></Route>
         <Route path="*" element={<EmptyPage></EmptyPage>}></Route>
       </Routes>
-    </div>
+    </AppContainer>
   );
 }
 export default App;

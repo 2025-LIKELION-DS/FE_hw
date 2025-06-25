@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"; // 
 import useFetch from "../hooks/useFetch"; // 
+import { DayListContainer, DayListItem, DayLink } from '../styles/GlobalStyles';
+
 
 export default function DayList() { // 
   const days = useFetch("http://localhost:3001/days"); // 
@@ -9,12 +11,12 @@ export default function DayList() { //
   }
 
   return ( 
-    <ul className="list_day"> 
+    <DayListContainer> 
       {days.map((day) => ( 
-        <li key={day.id}> 
-          <Link to={`/day/${day.day}`}>Day {day.day}</Link> {/* `을 사용하여 동적 경로 생성 */}
-        </li>
+        <DayListItem key={day.id}> 
+          <DayLink as={Link} to={`/day/${day.day}`}>Day {day.day}</DayLink>
+        </DayListItem>
       ))}
-    </ul>
+    </DayListContainer>
   );
 }

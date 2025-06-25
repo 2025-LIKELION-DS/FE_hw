@@ -1,4 +1,5 @@
 import { useState } from "react"; // 
+import { TableCell, CommonButton, DeleteButton, OffRow   } from '../styles/GlobalStyles';
 
 export default function Word({ word: w }) { 
   const [word, setWord] = useState(w); 
@@ -46,20 +47,20 @@ export default function Word({ word: w }) {
   }
 
   return (
-    <tr className={isDone ? "off" : ""}>
-      <td>
+    <OffRow className={isDone ? "off" : ""}>
+      <TableCell>
         <input type="checkbox" checked={isDone} onChange={toggleDone} />
-      </td>
-      <td>{word.eng}</td>
-      <td>{isShow ? word.kor : ""}</td>
-      <td>
-        <button onClick={toggleShow}>
+      </TableCell>
+      <TableCell>{word.eng}</TableCell>
+      <TableCell>{isShow ? word.kor : ""}</TableCell>
+      <TableCell>
+        <CommonButton onClick={toggleShow}>
           {isShow ? "뜻 숨기기" : "뜻 보기"}
-        </button>
-        <button onClick={del} className="btn_del">
+        </CommonButton>
+        <DeleteButton onClick={del} className="btn_del">
           삭제
-        </button>
-      </td>
-    </tr>
+        </DeleteButton>
+      </TableCell>
+    </OffRow>
   );
 }

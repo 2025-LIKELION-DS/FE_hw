@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
+import { HeaderContainer, HeaderMenu, HeaderLink } from '../styles/GlobalStyles'; // Styled Components 임포트
 
 export default function Header(){
   return(
-    <div className="header">
+    <HeaderContainer>
       <h1>
         <Link to="/">영어 단어장 만들기</Link>
       </h1>
-      <div className="menu">
-        <Link to="/create_word" className="link">
+      <HeaderMenu>
+        <HeaderLink as={Link} to="/create_word">
           단어 추가
-        </Link>
-        <Link to="/create_day" className="link">
+        </HeaderLink>
+        <HeaderLink as={Link} to="/create_day">
           Day 추가
-        </Link>
-      </div>
-    </div>
+        </HeaderLink>
+      </HeaderMenu>
+    </HeaderContainer>
   );
 }

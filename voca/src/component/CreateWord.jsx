@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"; 
 import { useNavigate } from "react-router-dom";
-import useFetch from "../hooks/useFetch"; 
+import useFetch from "../hooks/useFetch";
+import { InputArea, InputLabel, StyledInput, StyledSelect, CommonButton } from '../styles/GlobalStyles';
 
 export default function CreateWord() { 
   const days = useFetch("http://localhost:3001/days"); 
@@ -44,28 +45,28 @@ export default function CreateWord() {
 
   return ( 
     <form onSubmit={onSubmit}>
-      <div className="input_area">
-        <label>Eng</label>
-        <input type="text" placeholder="computer" ref={engRef} />
-      </div>
-      <div className="input_area">
-        <label>Kor</label>
-        <input type="text" placeholder="컴퓨터" ref={korRef} />
-      </div>
-      <div className="input_area">
-        <label>Day</label>
-        <select ref={dayRef}>
+      <InputArea>
+        <InputLabel>Eng</InputLabel>
+        <StyledInput type="text" placeholder="computer" ref={engRef} />
+      </InputArea>
+      <InputArea>
+        <InputLabel>Kor</InputLabel>
+        <StyledInput type="text" placeholder="컴퓨터" ref={korRef} />
+      </InputArea>
+      <InputArea>
+        <InputLabel>Day</InputLabel>
+        <StyledSelect ref={dayRef}>
           {days.map((day) => (
             <option key={day.id} value={day.day}>
               {day.day}
             </option>
           ))}
-        </select>
-      </div>
-      <button 
+        </StyledSelect>
+      </InputArea>
+      <CommonButton
         style={{ opacity: isLoading ? 0.3 : 1 }}> 
         {isLoading ? "Saving..." : "저장"}
-      </button>
+      </CommonButton>
     </form>
   );
 }
