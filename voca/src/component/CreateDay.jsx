@@ -21,7 +21,7 @@ export default function CreateDay() {
       }
     });
   }
-
+ 
   return (
     <div>
       <h3>현재 일수 : {days.length}일</h3>
