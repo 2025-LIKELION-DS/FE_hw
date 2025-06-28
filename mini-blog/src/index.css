@@ -1,0 +1,93 @@
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
+
+/* body {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} */
+
+/*commentListItem*/
+/* .comment-item {
+  border: 1.5px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  padding: 12px;
+  margin-top: 9px;
+  display: inline-block;
+  width: 700px;
+} */
+
+/* postviwepage */
+/* .view-comment {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6e6e6e;
+  margin-top: 8px;
+}
+.view-button {
+  display: block;
+  margin-top: 14px;
+}
+
+.view-postlistitem {
+  border: 1.5px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  padding: 25px 15px;
+  margin-top: 9px;
+  width: 700px;
+} */
+
+/* postWritePage */
+/* .write-title {
+  font-weight: bolder;
+  color: #313131;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.write-button {
+  display: block;
+  margin-top: 14px;
+} */
+
+/* postlist */
+/* .post-list {
+  border: 2px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  padding: 20px;
+  width: 700px;
+  margin: 15px 0;
+  font-weight: 500;
+  color: #6d6d6d;
+} */
+
+/* main */
+/* .main-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+} */
