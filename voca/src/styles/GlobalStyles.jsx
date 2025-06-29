@@ -46,7 +46,7 @@ export const HeaderMenu = styled.div`
 `;
 
 // 5. .header .link 클래스 스타일
-export const HeaderLink = styled(styled.a)` 
+export const HeaderLink = styled.a` 
   border: 1px solid #333;
   padding: 10px;
   margin-left: 10px;
@@ -69,7 +69,7 @@ export const DayListItem = styled.li`
 `;
 
 // 8. .list_day a 클래스 스타일
-export const DayLink = styled(styled.a)`
+export const DayLink = styled.a`
   display: block;
   padding: 20px 0;
   font-weight: bold;
@@ -118,7 +118,7 @@ export const CommonButton = styled.button`
   background-color: dodgerblue;
 `;
 
-export const DeleteButton = styled(CommonButton)` 
+export const DeleteButton = CommonButton` 
   margin-left: 10px;
   color: #fff;
   background-color: firebrick;

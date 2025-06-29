@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { HeaderContainer, HeaderMenu, HeaderLink } from '../styles/GlobalStyles'; // Styled Components 임포트
-
+import { HeaderContainer, HeaderMenu, HeaderLink } from '../styles/GlobalStyles';
 export default function Header(){
   return(
     <HeaderContainer>
