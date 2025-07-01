@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const BlogTitle = styled(Link)`
+export const BlogTitle = styled.div`
   font-size: 24px;
   font-weight: 600;
   padding: 30px;
@@ -27,9 +26,9 @@ export const ListContainer = styled.div`
   gap: 10px;
 `;
 
-export const BlogForm = styled.form`
+export const BlogForm = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
 `;

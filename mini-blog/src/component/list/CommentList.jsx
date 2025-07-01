@@ -1,13 +1,11 @@
-import * as S from "../ui/CommonStyle";
+import * as S from "../ui/Common.style";
 import CommentListItem from "./CommentListItem";
 
-export default function CommentList({ post }) {
-  //useEffect
-
+export default function CommentList({ comments, onDelete }) {
   return (
     <S.ListContainer>
-      {post.comments.map((comment) => (
-        <CommentListItem comment={comment} post={post} key={comment.id} />
+      {comments.map((comment) => (
+        <CommentListItem key={comment.id} comment={comment} onDelete={onDelete} />
       ))}
     </S.ListContainer>
   );

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import PostListItem from "./PostListItem";
-import * as S from "../ui/CommonStyle";
+import * as S from "../ui/Common.style";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/posts`)
+    fetch("http://localhost:3001/posts")
       .then((res) => res.json())
       .then((data) => setPosts(data));
   }, []);
@@ -14,9 +14,7 @@ export default function PostList() {
   return (
     <S.ListContainer>
       {posts.map((post) => (
-        <div>
-          <PostListItem key={post.id} post={post} />
-        </div>
+        <PostListItem key={post.id} post={post} />
       ))}
     </S.ListContainer>
   );
